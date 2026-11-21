@@ -1,0 +1,9 @@
+# Local development override: build QuantSeal image directly from local source
+# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+
+services:
+  quantseal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: quantseal:local

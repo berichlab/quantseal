@@ -1,0 +1,54 @@
+# QuantSeal by BeRichLab — One-Click Self-Hosted Anti-Overfitting Quant Research Lab
+# Designed for Hostinger VPS Docker Manager (runs comfortably on KVM 1 / 4GB RAM)
+
+services:
+  quantseal:
+    image: ${QUANTSEAL_IMAGE:-ghcr.io/berichlab/quantseal:latest}
+    container_name: quantseal
+    restart: unless-stopped
+    ports:
+      - "${QUANTSEAL_PORT:-8000}:8000"
+    environment:
+      # --- Security (Set a strong password before public exposure) ---
+      QUANTSEAL_ADMIN_PASSWORD: ${QUANTSEAL_ADMIN_PASSWORD:-change-me-strong-password}
+      QUANTSEAL_SECRET_KEY: ${QUANTSEAL_SECRET_KEY:-}
+
+      # --- Storage & First-Boot Experience ---
+      QUANTSEAL_DATA_DIR: /data
+      QUANTSEAL_DATABASE_URL: ${QUANTSEAL_DATABASE_URL:-}
+      QUANTSEAL_AUTO_DEMO: ${QUANTSEAL_AUTO_DEMO:-true}
+
+      # --- Market Defaults (us_equities | crypto_spot | tw_equities | custom) ---
+      QUANTSEAL_DEFAULT_MARKET_PRESET: ${QUANTSEAL_DEFAULT_MARKET_PRESET:-us_equities}
+      QUANTSEAL_DEFAULT_SYMBOLS: ${QUANTSEAL_DEFAULT_SYMBOLS:-SPY,QQQ,IWM,XLK,XLF,XLE,XLV,XLI,XLP,XLY,GLD,TLT}
+
+      # --- Optional BYOK LLM (none | openai | anthropic | gemini | openai_compatible) ---
+      QUANTSEAL_LLM_PROVIDER: ${QUANTSEAL_LLM_PROVIDER:-none}
+      QUANTSEAL_LLM_API_KEY: ${QUANTSEAL_LLM_API_KEY:-}
+      QUANTSEAL_LLM_MODEL: ${QUANTSEAL_LLM_MODEL:-gpt-4o-mini}
+      QUANTSEAL_LLM_BASE_URL: ${QUANTSEAL_LLM_BASE_URL:-}
+
+      # --- 24/7 Background Scheduler (UTC) ---
+      QUANTSEAL_SCHEDULER_ENABLED: ${QUANTSEAL_SCHEDULER_ENABLED:-true}
+      QUANTSEAL_SHADOW_CRON: ${QUANTSEAL_SHADOW_CRON:-0 22 * * 1-5}
+      QUANTSEAL_CAMPAIGN_CRON: ${QUANTSEAL_CAMPAIGN_CRON:-}
+
+      # --- Optional Notifications ---
+      QUANTSEAL_TELEGRAM_BOT_TOKEN: ${QUANTSEAL_TELEGRAM_BOT_TOKEN:-}
+      QUANTSEAL_TELEGRAM_CHAT_ID: ${QUANTSEAL_TELEGRAM_CHAT_ID:-}
+      QUANTSEAL_DISCORD_WEBHOOK_URL: ${QUANTSEAL_DISCORD_WEBHOOK_URL:-}
+      QUANTSEAL_GENERIC_WEBHOOK_URL: ${QUANTSEAL_GENERIC_WEBHOOK_URL:-}
+
+      # --- External MCP Connectors ---
+      QUANTSEAL_ALLOW_STDIO_MCP: ${QUANTSEAL_ALLOW_STDIO_MCP:-false}
+    volumes:
+      - quantseal_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)\""]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+volumes:
+  quantseal_data:
