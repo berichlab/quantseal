@@ -38,7 +38,7 @@ export const LoginModal: React.FC<Props> = ({ onSuccess }) => {
             <div>
               <div className="flex items-baseline gap-2">
                 <h1 className="text-xl font-bold tracking-tight text-zinc-100">QuantSeal</h1>
-                <span className="font-mono text-[11px] text-zinc-400">by BeRichLab</span>
+                <span className="font-mono text-[11px] text-zinc-400">by berichlab</span>
               </div>
               <p className="text-xs text-zinc-400">{t("app.tagline")}</p>
             </div>

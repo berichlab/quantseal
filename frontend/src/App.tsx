@@ -111,7 +111,7 @@ export const App: React.FC = () => {
               rel="noreferrer"
               className="block truncate font-mono text-[10px] text-zinc-400 transition hover:text-zinc-200"
             >
-              by BeRichLab · Apache-2.0
+              by berichlab · Apache-2.0
             </a>
           </div>
         </div>

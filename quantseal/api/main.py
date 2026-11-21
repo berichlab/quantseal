@@ -52,9 +52,9 @@ def create_app(
                 sched.stop()
 
     app = FastAPI(
-        title="QuantSeal by BeRichLab",
+        title="QuantSeal by berichlab",
         version=__version__,
-        description="Self-hosted anti-overfitting autonomous quantitative research lab by BeRichLab.",
+        description="Self-hosted anti-overfitting autonomous quantitative research lab by berichlab.",
         lifespan=lifespan,
     )
 

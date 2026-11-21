@@ -1,6 +1,6 @@
-# Contributing to QuantSeal by BeRichLab
+# Contributing to QuantSeal by berichlab
 
-Thank you for contributing to **QuantSeal** (maintained by [BeRichLab](https://github.com/berichlab))! All contributions are licensed under Apache-2.0.
+Thank you for contributing to **QuantSeal** (maintained by [berichlab](https://github.com/berichlab))! All contributions are licensed under Apache-2.0.
 
 ## Core Design Principles
 

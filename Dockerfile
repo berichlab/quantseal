@@ -11,9 +11,9 @@ RUN npm run build
 # --- Stage 2: Lean Python 3.12 runtime (no Node, no browser bloat) ---
 FROM python:3.12-slim AS runtime
 
-LABEL org.opencontainers.image.title="QuantSeal by BeRichLab" \
+LABEL org.opencontainers.image.title="QuantSeal by berichlab" \
       org.opencontainers.image.description="Self-hosted anti-overfitting autonomous quant research lab" \
-      org.opencontainers.image.vendor="BeRichLab" \
+      org.opencontainers.image.vendor="berichlab" \
       org.opencontainers.image.source="https://github.com/berichlab/quantseal" \
       org.opencontainers.image.licenses="Apache-2.0"
 

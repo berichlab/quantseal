@@ -2,7 +2,7 @@
 
 ## Security Model
 
-**QuantSeal by BeRichLab** is designed specifically for safe self-hosted execution of LLM-assisted quantitative research:
+**QuantSeal by berichlab** is designed specifically for safe self-hosted execution of LLM-assisted quantitative research:
 
 1. **Zero Arbitrary Code Execution (`Zero-exec`)**: Strategy candidates are strictly declarative JSON ASTs validated against a bounded grammar (`quantseal/discovery/spec.py`). Keys such as `src`, `code`, `python`, `exec`, `eval`, `compile`, `lambda`, and dunder attributes (`__`) are unconditionally rejected.
 2. **Fail-Closed External MCP Connectors**: External MCP servers default to Streamable HTTP / SSE only (`QUANTSEAL_ALLOW_STDIO_MCP=false`), preventing arbitrary local subprocess execution unless explicitly opted in by the server operator.

@@ -1,13 +1,13 @@
 # QuantSeal
 
-**可 24/7 自架的防過擬合 AI 量化研究實驗室 · 由 [BeRichLab](https://berich.cc/quantseal) 開源打造**
+**可 24/7 自架的防過擬合 AI 量化研究實驗室 · 由 [berichlab](https://berich.cc/quantseal) 開源打造**
 
 [English](README.md) | [繁體中文](README.zh-TW.md) | [官方網站 (berich.cc)](https://berich.cc/quantseal)
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-10b981.svg?style=for-the-badge)](./LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-38bdf8.svg?style=for-the-badge)](./pyproject.toml)
 [![Zero Exec AST](https://img.shields.io/badge/AI_Safety-Zero_exec()_JSON_AST-f59e0b.svg?style=for-the-badge)](#七大防過擬合不變量)
-[![By BeRichLab](https://img.shields.io/badge/Maintained_by-BeRichLab-27272a.svg?style=for-the-badge)](https://berich.cc/quantseal)
+[![By berichlab](https://img.shields.io/badge/Maintained_by-berichlab-27272a.svg?style=for-the-badge)](https://berich.cc/quantseal)
 
 <!-- 通過 Hostinger Open-Source Partners 後，將 YOUR_PARTNER_CODE 換成你的分潤代碼 -->
 [![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/deploy?template=berichlab/quantseal&ref=YOUR_PARTNER_CODE)
@@ -142,9 +142,9 @@ docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
 
 ---
 
-## 關於 BeRichLab
+## 關於 berichlab
 
-**QuantSeal** 由 **[BeRichLab](https://berich.cc)** 開源打造並長期維護，致力於將機構級的防過擬合檢驗、嚴謹因果回測與前瞻風控天梯普及給每一位獨立量化研究者。
+**QuantSeal** 由 **[berichlab](https://berich.cc)** 開源打造並長期維護，致力於將機構級的防過擬合檢驗、嚴謹因果回測與前瞻風控天梯普及給每一位獨立量化研究者。
 
 - 官方網站：[berich.cc](https://berich.cc) · [QuantSeal 專頁](https://berich.cc/quantseal)
 - GitHub 組織：[github.com/berichlab](https://github.com/berichlab)
