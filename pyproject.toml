@@ -45,7 +45,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/berichlab/quantseal"
+Homepage = "https://berich.cc/quantseal"
 Repository = "https://github.com/berichlab/quantseal"
 Issues = "https://github.com/berichlab/quantseal/issues"
 Organization = "https://github.com/berichlab"

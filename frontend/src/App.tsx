@@ -106,7 +106,7 @@ export const App: React.FC = () => {
               <span className="font-mono text-[10px] text-zinc-500">v{auth.version}</span>
             </div>
             <a
-              href="https://github.com/berichlab/quantseal"
+              href="https://berich.cc/quantseal"
               target="_blank"
               rel="noreferrer"
               className="block truncate font-mono text-[10px] text-zinc-400 transition hover:text-zinc-200"

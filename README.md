@@ -1,13 +1,13 @@
 # QuantSeal
 
-**Self-Hosted Anti-Overfitting Autonomous Quant Research Lab · by [BeRichLab](https://github.com/berichlab)**
+**Self-Hosted Anti-Overfitting Autonomous Quant Research Lab · by [BeRichLab](https://berich.cc/quantseal)**
 
-[English](README.md) | [繁體中文](README.zh-TW.md)
+[English](README.md) | [繁體中文](README.zh-TW.md) | [Official Website (berich.cc)](https://berich.cc/quantseal)
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-10b981.svg?style=for-the-badge)](./LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-38bdf8.svg?style=for-the-badge)](./pyproject.toml)
 [![Zero Exec AST](https://img.shields.io/badge/AI_Safety-Zero_exec()_JSON_AST-f59e0b.svg?style=for-the-badge)](#the-7-anti-overfitting-invariants)
-[![By BeRichLab](https://img.shields.io/badge/Maintained_by-BeRichLab-27272a.svg?style=for-the-badge)](https://github.com/berichlab)
+[![By BeRichLab](https://img.shields.io/badge/Maintained_by-BeRichLab-27272a.svg?style=for-the-badge)](https://berich.cc/quantseal)
 
 <!-- Replace `YOUR_PARTNER_CODE` once approved on Hostinger Open-Source Partners -->
 [![Deploy on Hostinger](https://assets.hostinger.com/vps/deploy.svg)](https://www.hostinger.com/deploy?template=berichlab/quantseal&ref=YOUR_PARTNER_CODE)
@@ -239,8 +239,9 @@ Includes unit, anti-leakage, causal exit-order, single-shot seal, prior-revision
 
 ## Built by BeRichLab
 
-**QuantSeal** is open-sourced and maintained by **[BeRichLab](https://github.com/berichlab)** — an independent quantitative research lab focused on reproducible trading systems, statistical falsification, and disciplined risk governance.
+**QuantSeal** is open-sourced and maintained by **[BeRichLab](https://berich.cc)** — an independent quantitative research lab focused on reproducible trading systems, statistical falsification, and disciplined risk governance.
 
+- Official Website: [berich.cc](https://berich.cc) · [QuantSeal Overview](https://berich.cc/quantseal)
 - GitHub Organization: [github.com/berichlab](https://github.com/berichlab)
 - Threads: [@berichlab](https://www.threads.com/@berichlab)
 - Instagram: [@berichlab](https://www.instagram.com/berichlab/)
